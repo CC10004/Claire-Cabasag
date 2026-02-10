@@ -74,25 +74,30 @@ body {
 
 /* Admin Badge in Sidebar */
 .admin-badge {
-  background: rgba(255, 255, 255, 0.1);
+  
   padding: 1rem;
   border-radius: var(--radius-lg);
   margin-bottom: 1.5rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 0.75rem;
   backdrop-filter: blur(10px);
 }
 
 .admin-avatar {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   border: 3px solid var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .admin-details {
-  flex: 1;
+  text-align: center;
+  gap: 0.05rem;     /* center text under avatar */
 }
 
 .admin-name {
@@ -119,7 +124,7 @@ body {
   font-weight: 600;
   cursor: pointer;
   transition: var(--transition);
-  margin-top: auto;
+  margin-top: 25%;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -156,7 +161,7 @@ body {
 }
 
 .nav-link.active {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: tra;
   box-shadow: var(--shadow-sm);
 }
 
